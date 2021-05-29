@@ -1,0 +1,14 @@
+{% extends '../base.html' %}
+{% block content %}
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">{{ product.name }}</h2>
+            <p class="lead">{{ product.description }}</p>
+            <p>{{ product.price }}</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img src="{{ product.image.url }}">
+
+        </div>
+    </div>
+{% endblock content %}
